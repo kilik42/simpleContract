@@ -1,6 +1,6 @@
-const SimpleSmartContract = artifacts.require('SimpleStorageContract');
+const SimpleSmartContract = artifacts.require('SimpleSmartContract');
 
-contract('SimpleStorageContract', ()=> {
+contract('SimpleSmartContract', ()=> {
     it ('Should deploy smart contract properly', async () =>{
         const  simpleSmartContract = await SimpleSmartContract.deployed();
         console.log(simpleSmartContract.address);
